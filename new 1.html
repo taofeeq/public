@@ -1,0 +1,146 @@
+<head>
+<link rel="stylesheet" type="text/css" href="new 1.css">
+
+</head>
+<body >
+
+
+<div id = "first" >
+<h1 class= "texts" > Grade Calculator </h1>
+<div id ="second">
+
+
+<h2 class ="texts"> Activities </h2>
+<p> Give grades to the numeric activities. <p>
+<div class="divTable">
+<div class="divTableBody">
+<div id="pad" class="divTableRow">
+<div class="divTableCell">&nbsp;Name</div>
+<div class="divTableCell">Short Name</div>
+<div class="divTableCell">&nbsp;Grade</div>
+<div class="divTableCell">&nbsp;Percentage</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;Activity 1</div>
+<div class="divTableCell">&nbsp;A1</div>
+
+<div class="divTableCell"><input type ="text" id ="texter1" name ="name1"> </input> / <input type ="text" id ="texter2"  name = "name2"> </input> <br> &nbsp;</div>
+<div class="divTableCell"> <label id="lb"></label>&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;Activity 2</div>
+<div class="divTableCell">&nbsp;A2</div>
+
+<div class="divTableCell"> <input type ="text" id ="texter3" name = "name3" > / <input type ="text" id ="texter4" onkeydown = "javascript:m1();"> <br>&nbsp;</div>
+<div class="divTableCell"> <label id="lb1"></label>&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;Activity 3</div>
+<div class="divTableCell">&nbsp;A3</div>
+
+<div class="divTableCell"> <input type ="text" id ="texter5" > / <input type ="text" id ="texter6"> <br>&nbsp;</div>
+<div class="divTableCell"> <label id="lb2"></label>&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;Activity 4</div>
+<div class="divTableCell">&nbsp;A4</div>
+
+<div class="divTableCell"> <input type ="text" id ="texter7" > / <input type ="text" id ="texter8"> <br>&nbsp;</div>
+<div class="divTableCell"> <label id="lb3"></label>&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;TOTAL</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell"><label id="lb4"></label><label id="lb5"></label> &nbsp;</div>
+</div>
+</div>
+</div>
+<div id = "buttton">
+<button  id = "av" onClick ="m(); m2()" > AVERAGE </button> &nbsp &nbsp &nbsp <button  onClick ="m(); m1()" id = " mean"> MEAN </button> 
+</div>
+</div>
+</div>
+<script type= "text/javascript">
+window.alert("welcome");
+
+function m(){
+//document.getElementById("texter1").onkeydown = function() {m()};
+var input1 = document.getElementById("texter1").value;
+var input2 = document.getElementById("texter2").value; 
+  a = (input1) * 1;
+  b = (input2)*1;
+perc1 = (input1/input2) * 100;
+document.getElementById("lb").innerHTML = perc1.toFixed(2) + '%';
+//window.slert(perc1);
+//console.log(perc1);
+
+
+
+
+
+var input3 = document.getElementById("texter3").value;
+var input4 = document.getElementById("texter4").value; 
+ c = (input3) * 1;
+ d = (input4) * 1;
+ perc2 = (input3/input4) * 100;
+document.getElementById("lb1").innerHTML = perc2.toFixed(2)+ '%';
+
+
+
+var input5 = document.getElementById("texter5").value;
+var input6 = document.getElementById("texter6").value;
+ e = (input5)* 1;
+ f = (input6) * 1; 
+perc3 = (input5/input6) * 100;
+document.getElementById("lb2").innerHTML = perc3.toFixed(2)+ '%';
+
+
+
+var input7 = document.getElementById("texter7").value;
+var input8 = document.getElementById("texter8").value; 
+var g = (input7) * 1;
+var h = (input8) * 1;
+ perc4 = (input7/input8) * 100;
+document.getElementById("lb3").innerHTML = perc4.toFixed(2)+ '%';
+
+var average = input1 + input3 + input5 + input7 ;
+var average1 =  input2 + input4 + input6 + input8;
+}
+
+
+function m1()
+{
+var mean = (perc1 + perc2 + perc3 + perc4);
+av = (mean / 4 );
+document.getElementById("lb4").innerHTML = av.toFixed(2);
+}
+function m2()
+{
+var input1 = document.getElementById("texter1").value;
+var input2 = document.getElementById("texter2").value; 
+var input3 = document.getElementById("texter3").value;
+var input4 = document.getElementById("texter4").value; 
+var input5 = document.getElementById("texter5").value;
+var input6 = document.getElementById("texter6").value;
+var input7 = document.getElementById("texter7").value;
+var input8 = document.getElementById("texter8").value;
+
+var aa = parseInt(input1);
+var ab = parseInt(input2);
+var ac = parseInt(input3);
+var ad = parseInt(input4);
+var ae = parseInt(input5);
+var af = parseInt(input6);
+var ag = parseInt(input7);
+var ah = parseInt(input8);
+
+
+var average = (aa+ ac + ae + ag);
+var average1= ( ab + ad + af + ah);
+avv = (average / average1) * 100;
+document.getElementById("lb4").innerHTML = avv.toFixed(2);
+}
+</script>
+
+</body>
