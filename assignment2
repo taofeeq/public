@@ -1,0 +1,195 @@
+body{
+background-color:red;
+
+}
+h1{
+	font-size: 32px;
+	font-family: "Arial"
+	
+}
+h2,p{
+	font-family: "Arial"
+}
+.texts
+{
+vertical-align: middle;
+min-height:15px;
+}
+#first
+{
+	background-color:white;
+	width: 1800px;
+	height: 570px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:300px;
+	margin-bottom:10px;
+}
+#second
+{
+	background-color:lightgrey;
+	width: 1000px;
+	height: 420px;
+	margin-left: 20px;
+	margin-right: auto;
+	margin-top:60px;
+	margin-bottom:10px;
+}
+#buttton
+{
+	
+margin-left:605px;
+margin-top:40px;
+font-family: "Arial"
+
+}
+#texter1
+{
+	width:55px;
+}
+#texter2
+{
+	width:55px;
+}
+#texter3
+{
+	width:55px;
+}
+#texter4
+{
+	width:55px;
+}
+#texter5
+{
+	width:55px;
+}
+#texter6
+{
+	width:55px;
+}
+#texter7
+{
+	width:55px;
+}
+#texter8
+{
+	width:55px;
+}
+#pad{
+  background-color: #4CAF50;
+  padding:30px;
+  border: 10px solid blue;
+  
+}
+.divTable{
+	display: table;
+	width: 90%;
+	margin-left:10px;
+}
+.divTableRow {
+	display: table-row;
+	font-family: "Arial"
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+#fixedheader {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#000;
+	padding:30px;
+}
+#fixedfooter {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#000;
+	padding:70px;
+}
+bodyy{
+
+	background-color:blue;
+	width: 1300px;
+	height: 570px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:120px;
+	margin-bottom:10px;
+}
+dse{
+ align: left;
+ color: black;
+ }
+ 
+ 
+ 
+ 
+ <head>
+<link rel="stylesheet" type="text/css" href="new 1.css">
+
+</head>
+<body >
+
+<div id="fixedheader">
+<div id ="menu">
+<ul>
+<li> <a href = "#" class ="active"> Home </a> </li>
+
+</ul>
+
+<a href = "http://google.com"> Index <br /></a>
+
+ <a href = "#"> Student  <br/> </a> 
+ <ul>
+<li> <a href = "https://fathomless-hollows-62853.herokuapp.com"> GPA </a> </li>
+<li> <a href = "https://thawing-lake-41676.herokuapp.com/new%201"> Calculator </a> </li>
+</ul>
+
+</div>
+</div>
+<div id = "first" >
+<h1 class= "texts" > SFU GRADING WEBPAGE </h1>
+<div id ="second">
+
+
+<h2 class ="texts">  </h2>
+<p> Follow the links above  to destined page. <p>
+<img src="Useful Links3.jpg" alt="Links" height="242" width="242">
+
+
+</div>
+</div>
+
+<div id="fixedfooter">
+<p> Copyright: All rights reserved.</p> 
+<p id ="dse" > Contact Us: <br/>
+SFU Surrey, British Columbia <br />
+V4W R1E.
+</p>
+</div>
+
+</body>
